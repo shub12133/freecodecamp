@@ -1,0 +1,18 @@
+<%- include('./partials/header') -%>
+
+<div class="jumbotron">
+    <h1 class="display-4"> Find your products </h1>
+    <p class="lead">Ecomarce app</p>
+    <hr class="my-4">
+    <p>Use My App</p>
+    <p class="lead">
+      <% if(!currentUser){ %>
+      <a class="btn btn-primary btn-lg" href="/register" role="button">Sign Up</a>
+      <% } else{  %>
+        <a class="btn btn-primary btn-lg" href="/logout" role="button">Logout</a>
+        <% } %>
+
+    </p>
+      
+
+  </div>    <%- include('./partials/footer') -%>
